@@ -11,6 +11,7 @@ export class DefaultImageDirective {
 
   stopError : boolean;
 
+
   @HostListener('error') onError() {
     this.updateUrl();
   }

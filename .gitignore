@@ -1,11 +1,8 @@
 .idea
 node_modules
 typings
-index.js
+*.js
 *.js.map
-index.d.ts
-src/default-image.directive.js
-src/default-image.directive.js.map
-src/default-image.directive.d.ts
+*.d.ts
 !src/
 !./*

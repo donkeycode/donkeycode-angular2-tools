@@ -11,7 +11,7 @@
   },
   "files": [
     "typings/index.d.ts",
-    "src/module.ts",
-    "src/index.ts"
+    "src/index.ts",
+    "src/directives/default-image.directive.ts"
   ]
 }

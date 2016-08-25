@@ -1,6 +1,4 @@
-import { Directive, Input, HostListener } from '@angular/core';
-
-//declare var $ : any;
+import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
   selector: 'img[default]'
@@ -11,10 +9,11 @@ export class DefaultImageDirective {
 
   stopError : boolean;
 
-
   @HostListener('error') onError() {
     this.updateUrl();
   }
+
+  constructor(private elementRef: ElementRef) {}
 
   updateUrl() {
 
@@ -23,8 +22,7 @@ export class DefaultImageDirective {
     }
 
     this.stopError = true;
-
-    //$('img[id="' + this.selectorImg + '"]').attr('src', this.default);
+    this.elementRef.nativeElement.attr('src', this.default);
 
   }
 

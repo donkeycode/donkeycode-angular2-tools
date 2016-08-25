@@ -11,8 +11,6 @@
   },
   "files": [
     "typings/index.d.ts",
-    "src/index.ts",
-    "src/directives/default-image.directive.ts"
-  ],
-   "buildOnSave": true
+    "src/index.ts"
+  ]
 }

@@ -9,6 +9,7 @@
     "index.js.map",
     "index.d.ts",
     "src/index.ts",
+    "src/directives/default-image.directive.ts",
     "typings.json",
     "CHANGELOG.md"
   ],

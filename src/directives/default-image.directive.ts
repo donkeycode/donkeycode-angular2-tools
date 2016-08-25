@@ -1,6 +1,6 @@
 import { Directive, Input, HostListener } from '@angular/core';
 
-declare var $ : any;
+//declare var $ : any;
 
 @Directive({
   selector: 'img[default]'
@@ -24,7 +24,7 @@ export class DefaultImageDirective {
 
     this.stopError = true;
 
-    $('img[id="' + this.selectorImg + '"]').attr('src', this.default);
+    //$('img[id="' + this.selectorImg + '"]').attr('src', this.default);
 
   }
 

@@ -1,0 +1,6 @@
+.idea
+node_modules
+typings
+index.js
+index.js.map
+index.d.ts

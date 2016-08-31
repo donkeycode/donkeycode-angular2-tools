@@ -4,21 +4,10 @@
   "description": "Lots of things for Angular 2",
   "main": "index.js",
   "typings": "./index.d.ts",
-  "files": [
-    "index.js",
-    "index.js.map",
-    "index.d.ts",
-    "src/index.ts",
-    "src/default-image.directive.ts",
-    "src/default-image.directive.js",
-    "src/default-image.directive.js.map",
-    "typings.json",
-    "CHANGELOG.md"
-  ],
   "scripts": {
     "install_typings": "typings install",
     "test": "tslint src/*.ts && typings install && tsc && karma start",
-    "prepublish": "typings install && tsc --outDir ."
+    "prepublish": "typings install && tsc"
   },
   "keywords": [
     "angular2",

@@ -9,5 +9,6 @@ export class Test2Component {
 
   ngOnInit() {
     console.log("test component");
+    
   }
 }

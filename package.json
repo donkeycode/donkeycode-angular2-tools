@@ -10,6 +10,11 @@
     "index.d.ts",
     "src/index.ts",
     "src/directives/default-image.directive.ts",
+    "directives/default-image.directive.js",
+    "src/directives/test.component.ts",
+    "directives/test.component.js",
+    "src/test.component.ts",
+    "src/test.component.js",
     "typings.json",
     "CHANGELOG.md"
   ],

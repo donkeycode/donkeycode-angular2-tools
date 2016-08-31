@@ -10,4 +10,5 @@ export class TestComponent {
   ngOnInit() {
     console.log("test component");
   }
+  
 }

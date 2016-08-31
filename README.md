@@ -31,7 +31,7 @@ Finally, install the required typescript definitions:
 
 `npm run install_typings`
 
-Well done! angular2-moment is now installed and ready to be built.
+Well done! donkeycode-angular2-tools is now installed and ready to be built.
 
 ## Building
 

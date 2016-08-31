@@ -7,13 +7,16 @@ export class DefaultImageDirective {
   @Input() default: string;
   @Input() selectorImg: string;
 
+  element: HTMLElement;
   stopError : boolean;
 
   @HostListener('error') onError() {
     this.updateUrl();
   }
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef : ElementRef) {
+    this.element = elementRef.nativeElement;
+  }
 
   updateUrl() {
 
@@ -22,7 +25,7 @@ export class DefaultImageDirective {
     }
 
     this.stopError = true;
-    this.elementRef.nativeElement.attr('src', this.default);
+    this.element.setAttribute('src', this.default);
 
   }
 

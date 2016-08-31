@@ -11,7 +11,7 @@
     "src/index.ts",
     "src/default-image.directive.ts",
     "src/default-image.directive.js",
-    "src/default-image.js.map",
+    "src/default-image.directive.js.map",
     "typings.json",
     "CHANGELOG.md"
   ],

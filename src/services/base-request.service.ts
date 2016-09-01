@@ -3,11 +3,18 @@ import { Http } from '@angular/http';
 import { BaseUserService } from './base-user.service';
 
 @Injectable()
-export class BaseRequestService {
+export abstract class BaseRequestService {
   static isRefreshingToken: any = null;
   activeRequest: any = null;
+  config: any = {}
+  contentHeaders: any  = {}
 
-  constructor(public http: Http, private config: any = {}, private contentHeaders: any  = {}) {}
+  constructor(public http: Http) {}
+
+  public init(config: any, contentHeaders: any) {
+    this.config = config;
+    this.contentHeaders = contentHeaders;
+  }
 
   public transformUrl(url: string) {
 

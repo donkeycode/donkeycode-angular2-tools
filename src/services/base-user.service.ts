@@ -3,14 +3,14 @@ import { BaseRequestService } from './base-request.service';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 @Injectable()
-export class BaseUserService {
-
-  constructor(config: any = {}) {
-    BaseUserService.config = config;
-  }
+export abstract class BaseUserService {
 
   static account: any = {};
   static config : any = {};
+
+  static init(config: any) {
+    BaseUserService.config = config;
+  }
 
   static getProfile(force = false) {
     if (!force && this.account && this.account.groups) {

@@ -7,7 +7,7 @@ import { BaseUserService } from './base-user.service';
  * <br>
  * <strong>Usage</strong>
  * ```
- * import { Injectable, Inject } from '@angular/core';
+ * import { Injectable } from '@angular/core';
  * import { BaseRequestService } from 'donkeycode-angular2-tools/src/services/base-request.service';
  * import { Http } from '@angular/http';
  * import { contentHeaders } from './headers';
@@ -16,7 +16,7 @@ import { BaseUserService } from './base-user.service';
  * @Injectable()
  * export class RequestService extends BaseRequestService {
  *
- *   constructor(@Inject(Http) http) {
+ *   constructor(public http: Http) {
  *     super(http);
  *     super.init(config, contentHeaders);
  *   }

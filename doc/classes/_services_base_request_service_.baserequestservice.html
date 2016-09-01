@@ -77,7 +77,7 @@
 							<br>
 							<strong>Usage</strong>
 							```
-							import { Injectable, Inject } from &#39;@angular/core&#39;;
+							import { Injectable } from &#39;@angular/core&#39;;
 							import { BaseRequestService } from &#39;donkeycode-angular2-tools/src/services/base-request.service&#39;;
 							import { Http } from &#39;@angular/http&#39;;
 							import { contentHeaders } from &#39;./headers&#39;;
@@ -87,7 +87,7 @@
 						<dt>injectable</dt>
 						<dd><p>()
 							export class RequestService extends BaseRequestService {</p>
-							<p>  constructor(@Inject(Http) http) {
+							<p>  constructor(public http: Http) {
 								super(http);
 								super.init(config, contentHeaders);
 							}</p>
@@ -158,7 +158,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L32">services/base-request.service.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L32">services/base-request.service.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -180,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">active<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L30">services/base-request.service.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L30">services/base-request.service.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L31">services/base-request.service.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L31">services/base-request.service.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">content<wbr>Headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L32">services/base-request.service.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L32">services/base-request.service.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Http</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L34">services/base-request.service.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L34">services/base-request.service.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Refreshing<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L29">services/base-request.service.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L29">services/base-request.service.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L131">services/base-request.service.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L131">services/base-request.service.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -260,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L125">services/base-request.service.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L125">services/base-request.service.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L164">services/base-request.service.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L164">services/base-request.service.ts:164</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -312,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L92">services/base-request.service.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L92">services/base-request.service.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -344,7 +344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L71">services/base-request.service.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L71">services/base-request.service.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,7 +379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L36">services/base-request.service.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L36">services/base-request.service.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -405,7 +405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L63">services/base-request.service.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L63">services/base-request.service.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -428,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L113">services/base-request.service.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L113">services/base-request.service.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -456,7 +456,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L119">services/base-request.service.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L119">services/base-request.service.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -484,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L137">services/base-request.service.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L137">services/base-request.service.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -501,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L147">services/base-request.service.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L147">services/base-request.service.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -518,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L176">services/base-request.service.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L176">services/base-request.service.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -535,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/885d7fa/src/services/base-request.service.ts#L41">services/base-request.service.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-request.service.ts#L41">services/base-request.service.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

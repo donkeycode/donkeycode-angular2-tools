@@ -4,6 +4,8 @@ DonkeyCode offers a set of tools for developing with Angular 2 : spinner, defaul
 
 Have fun <3 !!
 
+See full documentation : https://donkeycode.github.io/donkeycode-angular2-tools
+
 # Contributing Guide
 
 Contributing to `donkeycode-angular2-tools` is fairly easy. This document shows you how to

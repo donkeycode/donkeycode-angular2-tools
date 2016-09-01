@@ -7,3 +7,4 @@ typings
 !src/
 !./*
 ./dist
+.DS_Store

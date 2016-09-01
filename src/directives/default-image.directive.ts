@@ -3,7 +3,7 @@ import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 /**
 * This directive transforms the path of an image with another if it is not found.
 *
-* @usage default `<img sss>`
+* @usage default `<img [default]="YOUR/NEW/IMAGE">`
 * @param default (String) Path of another image.
 * @returns Returns a image by default if image is not found.
 **/

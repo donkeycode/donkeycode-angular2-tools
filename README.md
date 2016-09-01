@@ -2,7 +2,7 @@
 
 DonkeyCode offers a set of tools for developing with Angular 2 : spinner, default image for example.
 
-Have fun <3
+Have fun <3 !!
 
 # Contributing Guide
 

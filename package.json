@@ -8,7 +8,7 @@
     "install_typings": "typings install",
     "test": "tslint src/*.ts && typings install && tsc && karma start",
     "prepublish": "typings install && tsc",
-    "generate-doc": "typedoc -t ES5 –out ./doc/ references.ts && git add . && git commit -m \"Update documentation\"  && git subtree split --prefix doc -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"
+    "generate-doc": "typedoc -t ES5 –out ./doc/ references.ts && touch ./doc/.nojekyll && git add . && git commit -m \"Update documentation\"  && git subtree split --prefix doc -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"
   },
   "keywords": [
     "angular2",

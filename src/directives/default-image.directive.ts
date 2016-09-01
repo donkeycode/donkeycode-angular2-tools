@@ -1,11 +1,15 @@
 import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 
 /**
-* This directive transforms the path of an image with another if it is not found.
+* <h2>This directive transforms the path of an image with another if it is not found.</h2>
+* <h3>USAGE :</h3>
+* `<img src="this.image.is.not" alt="description" [default]="YOUR/NEW/IMAGE" >`
 *
-* @usage default `<img [default]="YOUR/NEW/IMAGE">`
-* @param default (String) Path of another image.
-* @returns Returns a image by default if image is not found.
+* @attribute default (String) Path of another image.
+* @returns Returns an another image defined in attribute "default", if image is not found.
+* <br><br>
+* @author sophielongo <img src="https://avatars.githubusercontent.com/sophielongo?size=30" alt="sophielongo">
+* @version 0.0.1
 **/
 @Directive({
   selector: 'img[default]'
@@ -24,8 +28,9 @@ export class DefaultImageDirective {
     this.element = elementRef.nativeElement;
   }
 
-  updateUrl() {
+  private updateUrl() {
 
+    //If the replacement image is not found , a loop is not generated
     if (this.stopError) {
       return;
     }

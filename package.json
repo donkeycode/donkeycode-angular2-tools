@@ -7,7 +7,8 @@
   "scripts": {
     "install_typings": "typings install",
     "test": "tslint src/*.ts && typings install && tsc && karma start",
-    "prepublish": "typings install && tsc"
+    "prepublish": "typings install && tsc",
+    "generate-doc": "OLD_BRANCH=`git rev-parse --abbrev-ref HEAD` && mkdir ./doc && typedoc -t ES5 –out ./doc/ references.ts && mv doc/ ../ && git checkout gh-pages && rm -rf * && cp -RP ../doc/* . && rm -rf ../doc && git add . && git commit -m \"Update documentation base on $OLD_BRANCH\" && git push origin gh-pages && git checkout $OLD_BRANCH"
   },
   "keywords": [
     "angular2",

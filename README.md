@@ -2,6 +2,10 @@
 
 DonkeyCode offers a set of tools for developing with Angular 2 : spinner, default image for example.
 
+Have fun :heart: :heart: :heart: !!
+
+See full documentation : https://donkeycode.github.io/donkeycode-angular2-tools
+
 # Contributing Guide
 
 Contributing to `donkeycode-angular2-tools` is fairly easy. This document shows you how to
@@ -32,6 +36,38 @@ Finally, install the required typescript definitions:
 `npm run install_typings`
 
 Well done! donkeycode-angular2-tools is now installed and ready to be built.
+
+If you add an new component, service or directive, don't forget to add file on `tsconfig.json`.
+
+````
+{
+  "version": "1.8.10",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "files": [
+    "typings/index.d.ts",
+    "src/index.ts",
+    "src/directives/default-image.directive.ts",
+    "YOUR/FILE.HERE"
+  ]
+}
+````
+
+##DOCUMENTATION.
+We love documentation and we want documentation.
+Also, We work with typedoc ===> http://typedoc.org/guides/doccomments/
+
+Then, after to create your magic component, thanks to add annotations and run `npm run generate-doc`.
+
+As if by magic, you can see your doc on https://donkeycode.github.io/donkeycode-angular2-tools !
 
 ## Building
 

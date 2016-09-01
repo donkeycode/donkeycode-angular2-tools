@@ -61,7 +61,7 @@ If you add an new component, service or directive, don't forget to add file on `
 }
 ````
 
-##DOCUMENTATION.
+## Documentation
 We love documentation and we want documentation.
 Also, We work with typedoc ===> http://typedoc.org/guides/doccomments/
 

@@ -2,7 +2,7 @@
 
 DonkeyCode offers a set of tools for developing with Angular 2 : spinner, default image for example.
 
-Have fun <3 !!
+Have fun :heart: :heart: :heart: !!
 
 See full documentation : https://donkeycode.github.io/donkeycode-angular2-tools
 
@@ -64,6 +64,10 @@ If you add an new component, service or directive, don't forget to add file on `
 ##DOCUMENTATION.
 We love documentation and we want documentation.
 Also, We work with typedoc ===> http://typedoc.org/guides/doccomments/
+
+Then, after to create your magic component, thanks to add annotations and run `npm run generate-doc`.
+
+As if by magic, you can see your doc on https://donkeycode.github.io/donkeycode-angular2-tools !
 
 ## Building
 

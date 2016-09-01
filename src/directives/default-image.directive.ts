@@ -7,8 +7,8 @@ import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 *
 * @attribute default (String) Path of another image.
 * @returns Returns an another image defined in attribute "default", if image is not found.
-*
-* @author <img src="https://avatars.githubusercontent.com/sophielongo?size=30" alt="sophielongo"> sophielongo
+* <br><br>
+* @author sophielongo <img src="https://avatars.githubusercontent.com/sophielongo?size=30" alt="sophielongo">
 * @version 0.0.1
 **/
 @Directive({

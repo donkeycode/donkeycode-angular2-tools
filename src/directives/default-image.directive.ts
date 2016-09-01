@@ -1,8 +1,9 @@
 import { Directive, Input, HostListener, ElementRef } from '@angular/core';
 
 /**
-* <h2>This directive transforms the path of an image with another if it is not found.</h2>
-* <h3>USAGE :</h3>
+* This directive transforms the path of an image with another if it is not found.
+* <br>
+* <strong>Usage :</strong>
 * `<img src="this.image.is.not" alt="description" [default]="YOUR/NEW/IMAGE" >`
 *
 * @attribute default (String) Path of another image.

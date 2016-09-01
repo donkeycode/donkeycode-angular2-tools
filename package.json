@@ -1,6 +1,6 @@
 {
   "name": "donkeycode-angular2-tools",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "description": "Lots of things for Angular 2",
   "main": "dist/index.js",
   "typings": "./index.d.ts",

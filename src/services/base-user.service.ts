@@ -8,7 +8,7 @@ export abstract class BaseUserService {
   static account: any = {};
   static config : any = {};
 
-  static init(config: any) {
+  public init(config: any) {
     BaseUserService.config = config;
   }
 

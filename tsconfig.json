@@ -13,6 +13,8 @@
   "files": [
     "typings/index.d.ts",
     "src/index.ts",
-    "src/directives/default-image.directive.ts"
+    "src/directives/default-image.directive.ts",
+    "src/services/base-request.service.ts",
+    "src/services/base-user.service.ts"
   ]
 }

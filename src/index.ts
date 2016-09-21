@@ -5,8 +5,8 @@ import { DefaultImageModule } from './default-image';
 export { DefaultImageModule } from './default-image';
 
 //Component
-//import { SpinnerComponent } from './components/spinner/spinner.component';
-//export * from './components/spinner/spinner.component';
+import { SpinnerComponent } from './spinner';
+export * from './spinner';
 
 // SERVICES
 //export * from './services/base-request.service';
@@ -14,7 +14,8 @@ export { DefaultImageModule } from './default-image';
 
 @NgModule({
   exports: [
-    DefaultImageModule
+    DefaultImageModule,
+    SpinnerComponent
   ],
   providers: []
 })

@@ -1,18 +1,22 @@
+import { NgModule } from '@angular/core';
+
 // DIRECTIVES
-export * from './directives/default-image.directive';
-import { DefaultImageDirective } from './directives/default-image.directive';
+import { DefaultImageModule } from './default-image';
+export { DefaultImageModule } from './default-image';
 
 //Component
-import { SpinnerComponent } from './components/spinner/spinner.component';
-export * from './components/spinner/spinner.component';
+//import { SpinnerComponent } from './components/spinner/spinner.component';
+//export * from './components/spinner/spinner.component';
 
 // SERVICES
-export * from './services/base-request.service';
-export * from './services/base-user.service';
+//export * from './services/base-request.service';
+//export * from './services/base-user.service';
 
-export default {
-  directives: [
-    DefaultImageDirective,
-    SpinnerComponent
-  ]
-};
+@NgModule({
+  exports: [
+    DefaultImageModule
+  ],
+  providers: []
+})
+export class DonkerCodeModule {
+}

@@ -1,6 +1,5 @@
 import { Injectable, ReflectiveInjector } from '@angular/core';
 import { BaseRequestService } from './base-request.service';
-import { HTTP_PROVIDERS } from '@angular/http';
 
 /**
  * BaseUserService
@@ -27,6 +26,11 @@ export abstract class BaseUserService {
 
   static account: any = {};
   static config : any = {};
+  static requestService: BaseRequestService;
+
+  constructor(requestService : BaseRequestService) {
+    BaseUserService.requestService = requestService;
+  }
 
   public init(config: any) {
     BaseUserService.config = config;
@@ -40,14 +44,8 @@ export abstract class BaseUserService {
         });
     }
 
-    let injector = ReflectiveInjector.resolveAndCreate([
-      BaseRequestService, HTTP_PROVIDERS
-    ]);
-    let requestService = injector.get(BaseRequestService);
-
     return new Promise((resolve, reject) => {
-      requestService
-        .get(BaseUserService.config.apiUrl.profile)
+      BaseUserService.requestService.get(BaseUserService.config.apiUrl.profile)
         .then((response: any) => {
           this.account = response;
           resolve(this.account);

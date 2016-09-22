@@ -9,8 +9,8 @@ import { SpinnerComponent } from './spinner';
 export * from './spinner';
 
 // SERVICES
-//export * from './services/base-request.service';
-//export * from './services/base-user.service';
+export * from './services/base-request.service';
+export * from './services/base-user.service';
 
 @NgModule({
   exports: [

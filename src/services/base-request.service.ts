@@ -25,7 +25,7 @@ import { BaseUserService } from './base-user.service';
  * ```
  */
 @Injectable()
-export abstract class BaseRequestService {
+export class BaseRequestService {
   static isRefreshingToken: any = null;
   activeRequest: any = null;
   config: any = {}

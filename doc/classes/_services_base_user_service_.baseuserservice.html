@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DefaultImageDirective | donkeycode-angular2-tools</title>
+	<title>BaseUserService | donkeycode-angular2-tools</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,13 +57,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_directives_default_image_directive_.html">&quot;directives/default-image.directive&quot;</a>
+					<a href="../modules/_services_base_user_service_.html">&quot;services/base-user.service&quot;</a>
 				</li>
 				<li>
-					<a href="_directives_default_image_directive_.defaultimagedirective.html">DefaultImageDirective</a>
+					<a href="_services_base_user_service_.baseuserservice.html">BaseUserService</a>
 				</li>
 			</ul>
-			<h1>Class DefaultImageDirective</h1>
+			<h1>Class BaseUserService</h1>
 		</div>
 	</div>
 </header>
@@ -73,24 +73,24 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This directive transforms the path of an image with another if it is not found.
+						<p>BaseUserService
 							<br>
-							<strong>Usage :</strong>
-						<code>&lt;img src=&quot;this.image.is.not&quot; alt=&quot;description&quot; [default]=&quot;YOUR/NEW/IMAGE&quot; &gt;</code></p>
+							<strong>Usage</strong>
+							```
+							import { Injectable } from &#39;@angular/core&#39;;
+							import { BaseUserService } from &#39;donkeycode-angular2-tools/src/services/user-request.service&#39;;
+						import { config } from &#39;../../config&#39;;</p>
 					</div>
 					<dl class="tsd-comment-tags">
-						<dt>attribute</dt>
-						<dd><p>default (String) Path of another image.</p>
-						</dd>
-						<dt>returns</dt>
-						<dd><p>Returns an another image defined in attribute &quot;default&quot;, if image is not found.
-							<br><br></p>
-						</dd>
-						<dt>author</dt>
-						<dd><p>sophielongo <img src="https://avatars.githubusercontent.com/sophielongo?size=30" alt="sophielongo"></p>
-						</dd>
-						<dt>version</dt>
-						<dd><p>0.0.1</p>
+						<dt>injectable</dt>
+						<dd><p>()
+							export class RequestService extends BaseUserService {</p>
+							<p>  constructor() {
+								super();
+								super.init(config);
+							}</p>
+							<p>}
+							```</p>
 						</dd>
 					</dl>
 				</div>
@@ -99,7 +99,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DefaultImageDirective</span>
+						<span class="target">BaseUserService</span>
 					</li>
 				</ul>
 			</section>
@@ -108,95 +108,43 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_directives_default_image_directive_.defaultimagedirective.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_directives_default_image_directive_.defaultimagedirective.html#default" class="tsd-kind-icon">default</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_directives_default_image_directive_.defaultimagedirective.html#element" class="tsd-kind-icon">element</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_directives_default_image_directive_.defaultimagedirective.html#elementref" class="tsd-kind-icon">element<wbr>Ref</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_directives_default_image_directive_.defaultimagedirective.html#stoperror" class="tsd-kind-icon">stop<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_services_base_user_service_.baseuserservice.html#account" class="tsd-kind-icon">account</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_services_base_user_service_.baseuserservice.html#config" class="tsd-kind-icon">config</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_directives_default_image_directive_.defaultimagedirective.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_directives_default_image_directive_.defaultimagedirective.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_base_user_service_.baseuserservice.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_services_base_user_service_.baseuserservice.html#getprofile" class="tsd-kind-icon">get<wbr>Profile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_services_base_user_service_.baseuserservice.html#hasrole" class="tsd-kind-icon">has<wbr>Role</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_services_base_user_service_.baseuserservice.html#redirectlogin" class="tsd-kind-icon">redirect<wbr>Login</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Default<wbr>Image<wbr>Directive<span class="tsd-signature-symbol">(</span>elementRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ElementRef</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_directives_default_image_directive_.defaultimagedirective.html" class="tsd-signature-type">DefaultImageDirective</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L26">directives/default-image.directive.ts:26</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>elementRef: <span class="tsd-signature-type">ElementRef</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_directives_default_image_directive_.defaultimagedirective.html" class="tsd-signature-type">DefaultImageDirective</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="default" class="tsd-anchor"></a>
-					<h3>default</h3>
-					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="account" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> account</h3>
+					<div class="tsd-signature tsd-kind-icon">account<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L19">directives/default-image.directive.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L28">services/base-user.service.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="element" class="tsd-anchor"></a>
-					<h3>element</h3>
-					<div class="tsd-signature tsd-kind-icon">element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L21">directives/default-image.directive.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="elementref" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> element<wbr>Ref</h3>
-					<div class="tsd-signature tsd-kind-icon">element<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ElementRef</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L28">directives/default-image.directive.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="stoperror" class="tsd-anchor"></a>
-					<h3>stop<wbr>Error</h3>
-					<div class="tsd-signature tsd-kind-icon">stop<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L22">directives/default-image.directive.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L29">services/base-user.service.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,33 +152,85 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="onerror" class="tsd-anchor"></a>
-					<h3>on<wbr>Error</h3>
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L24">directives/default-image.directive.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L31">services/base-user.service.ts:31</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="updateurl" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Url</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getprofile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Profile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Profile<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/directives/default-image.directive.ts#L32">directives/default-image.directive.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L35">services/base-user.service.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> force: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="hasrole" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> has<wbr>Role</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Role<span class="tsd-signature-symbol">(</span>role<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L63">services/base-user.service.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>role: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="redirectlogin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> redirect<wbr>Login</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">redirect<wbr>Login<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/donkeycode/donkeycode-angular2-tools/blob/736a680/src/services/base-user.service.ts#L61">services/base-user.service.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -245,7 +245,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_directives_default_image_directive_.html">"directives/default-<wbr>image.directive"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -254,7 +254,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_services_base_request_service_.html">"services/base-<wbr>request.service"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_services_base_user_service_.html">"services/base-<wbr>user.service"</a>
 					</li>
 				</ul>
@@ -264,28 +264,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_directives_default_image_directive_.defaultimagedirective.html" class="tsd-kind-icon">Default<wbr>Image<wbr>Directive</a>
+						<a href="_services_base_user_service_.baseuserservice.html" class="tsd-kind-icon">Base<wbr>User<wbr>Service</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_services_base_user_service_.baseuserservice.html#account" class="tsd-kind-icon">account</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#default" class="tsd-kind-icon">default</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#element" class="tsd-kind-icon">element</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#elementref" class="tsd-kind-icon">element<wbr>Ref</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#stoperror" class="tsd-kind-icon">stop<wbr>Error</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_services_base_user_service_.baseuserservice.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
+								<a href="_services_base_user_service_.baseuserservice.html#init" class="tsd-kind-icon">init</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_directives_default_image_directive_.defaultimagedirective.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_services_base_user_service_.baseuserservice.html#getprofile" class="tsd-kind-icon">get<wbr>Profile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_services_base_user_service_.baseuserservice.html#hasrole" class="tsd-kind-icon">has<wbr>Role</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_services_base_user_service_.baseuserservice.html#redirectlogin" class="tsd-kind-icon">redirect<wbr>Login</a>
 							</li>
 						</ul>
 					</li>

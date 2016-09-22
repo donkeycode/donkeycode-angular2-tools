@@ -2,6 +2,26 @@ import { Injectable, ReflectiveInjector } from '@angular/core';
 import { BaseRequestService } from './base-request.service';
 import { HTTP_PROVIDERS } from '@angular/http';
 
+/**
+ * BaseUserService
+ * <br>
+ * <strong>Usage</strong>
+ * ```
+ * import { Injectable } from '@angular/core';
+ * import { BaseUserService } from 'donkeycode-angular2-tools/src/services/user-request.service';
+ * import { config } from '../../config';
+ *
+ * @Injectable()
+ * export class RequestService extends BaseUserService {
+ *
+ *   constructor() {
+ *     super();
+ *     super.init(config);
+ *   }
+ *
+ * }
+ * ```
+ */
 @Injectable()
 export abstract class BaseUserService {
 

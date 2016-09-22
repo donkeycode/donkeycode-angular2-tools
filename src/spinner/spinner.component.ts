@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from '@angular/core';
-import { SpinnerService } from '../../services/spinner.service';
+import { SpinnerService } from './spinner.service';
 
 declare var require: any;
 

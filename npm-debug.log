@@ -1,0 +1,154 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/sophielongo/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/Users/sophielongo/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.7
+3 info using node@v4.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/sophielongo/Documents/Projets/02_DonkeyCode/01_Made By DonkeyCode/donkeycode-angular2-tools',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/sophielongo/.npm correctMkdir not in flight; initializing
+10 info lifecycle donkeycode-angular2-tools@0.1.1~prepublish: donkeycode-angular2-tools@0.1.1
+11 silly lifecycle donkeycode-angular2-tools@0.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package.tgz',
+12 verbose tar pack   '/Users/sophielongo/Documents/Projets/02_DonkeyCode/01_Made By DonkeyCode/donkeycode-angular2-tools' ]
+13 verbose tarball /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package.tgz
+14 verbose folder /Users/sophielongo/Documents/Projets/02_DonkeyCode/01_Made By DonkeyCode/donkeycode-angular2-tools
+15 verbose addLocalTarball adding from inside cache /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package.tgz
+16 verbose correctMkdir /Users/sophielongo/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd donkeycode-angular2-tools@0.1.1
+18 verbose afterAdd /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/sophielongo/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package/package.json written
+21 silly publish { name: 'donkeycode-angular2-tools',
+21 silly publish   version: '0.1.1',
+21 silly publish   description: 'Lots of things for Angular 2',
+21 silly publish   main: 'dist/index.js',
+21 silly publish   typings: './index.d.ts',
+21 silly publish   scripts:
+21 silly publish    { test: 'tslint src/*.ts && typings install && tsc && karma start',
+21 silly publish      'generate-doc': 'typedoc -t ES5 –out ./doc/ references.ts && touch ./doc/.nojekyll && git add . && git commit -m "Update documentation"  && git subtree split --prefix doc -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages' },
+21 silly publish   keywords: [ 'angular2', 'tools' ],
+21 silly publish   author: { name: 'sophie@donkeycode.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   peerDependencies:
+21 silly publish    { '@angular/common': '2.0.0',
+21 silly publish      '@angular/compiler': '2.0.0',
+21 silly publish      '@angular/core': '2.0.0',
+21 silly publish      '@angular/forms': '^2.0.0',
+21 silly publish      '@angular/http': '2.0.0',
+21 silly publish      '@angular/platform-browser': '2.0.0',
+21 silly publish      '@angular/platform-browser-dynamic': '2.0.0',
+21 silly publish      '@angular/platform-server': '2.0.0' },
+21 silly publish   devDependencies:
+21 silly publish    { '@types/core-js': '^0.9.28',
+21 silly publish      '@types/hammerjs': '^2.0.28',
+21 silly publish      '@types/jasmine': '^2.2.29',
+21 silly publish      '@types/node': '^6.0.38',
+21 silly publish      '@types/selenium-webdriver': '^2.44.26',
+21 silly publish      '@types/source-map': '^0.1.26',
+21 silly publish      '@types/uglify-js': '^2.0.27',
+21 silly publish      '@types/webpack': '^1.12.29',
+21 silly publish      '@angular/common': '2.0.0',
+21 silly publish      '@angular/compiler': '2.0.0',
+21 silly publish      '@angular/core': '2.0.0',
+21 silly publish      '@angular/forms': '^2.0.0',
+21 silly publish      '@angular/http': '2.0.0',
+21 silly publish      '@angular/platform-browser': '2.0.0',
+21 silly publish      '@angular/platform-browser-dynamic': '2.0.0',
+21 silly publish      '@angular/platform-server': '2.0.0',
+21 silly publish      'angular2-template-loader': '^0.5.0',
+21 silly publish      'awesome-typescript-loader': '^2.2.1',
+21 silly publish      'es6-shim': '0.35.1',
+21 silly publish      'reflect-metadata': '0.1.3',
+21 silly publish      rxjs: '5.0.0-beta.12',
+21 silly publish      'ts-loader': '0.8.2',
+21 silly publish      'ts-helpers': '1.1.1',
+21 silly publish      'ts-node': '^1.3.0',
+21 silly publish      tslint: '3.15.1',
+21 silly publish      'tslint-loader': '^2.1.3',
+21 silly publish      typedoc: '^0.4.5',
+21 silly publish      typescript: '2.0.0',
+21 silly publish      'resolve-url-loader': '^1.6.0',
+21 silly publish      'url-loader': '^0.5.7',
+21 silly publish      webpack: '^2.1.0-beta.22',
+21 silly publish      'webpack-dev-middleware': '^1.6.1',
+21 silly publish      'webpack-dev-server': '^2.1.0-beta.2',
+21 silly publish      'webpack-md5-hash': '^0.0.5',
+21 silly publish      'webpack-merge': '^0.14.1',
+21 silly publish      'zone.js': '~0.6.17',
+21 silly publish      'file-loader': '^0.9.0' },
+21 silly publish   readme: '## DonkeyCode Angular2 tools\n\nDonkeyCode offers a set of tools for developing with Angular 2 : spinner, default image for example.\n\nHave fun :heart: :heart: :heart: !!\n\nSee full documentation : https://donkeycode.github.io/donkeycode-angular2-tools\n\n# Contributing Guide\n\nContributing to `donkeycode-angular2-tools` is fairly easy. This document shows you how to\nget the project, run all provided tests and generate a production ready build.\n\n## Dependencies\n\nTo make sure, that the following instructions work, please install the following dependencies\non you machine:\n\n- Node.js\n- npm\n- Git\n\n## Installation\n\nTo get the source of `donkeycode-angular2-tools` clone the git repository via:\n\n`git clone https://github.com/donkeycode/donkeycode-angular2-tools`\n\nThis will clone the complete source to your local machine. Navigate to the project folder\nand install all needed dependencies via **npm**:\n\n`npm install`\n\nFinally, install the required typescript definitions:\n\n`npm run install_typings`\n\nWell done! donkeycode-angular2-tools is now installed and ready to be built.\n\nIf you add an new component, service or directive, don\'t forget to add file on `tsconfig.json`.\n\n````\n{\n  "version": "1.8.10",\n  "compilerOptions": {\n    "noImplicitAny": true,\n    "module": "commonjs",\n    "target": "es5",\n    "emitDecoratorMetadata": true,\n    "experimentalDecorators": true,\n    "sourceMap": true,\n    "declaration": true,\n    "outDir": "dist"\n  },\n  "files": [\n    "typings/index.d.ts",\n    "src/index.ts",\n    "src/directives/default-image.directive.ts",\n    "YOUR/FILE.HERE"\n  ]\n}\n````\n\n## Documentation\nWe love documentation and we want documentation.\nAlso, We work with typedoc ===> http://typedoc.org/guides/doccomments/\n\nThen, after to create your magic component, thanks to add annotations and run `npm run generate-doc`.\n\nAs if by magic, you can see your doc on https://donkeycode.github.io/donkeycode-angular2-tools !\n\n## Building\n\n`donkeycode-angular2-tools` comes with a few **npm scripts** which help you to automate\nthe development process.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '7afb0328862ca13da46a625b8a0ee3691db571ac',
+21 silly publish   _id: 'donkeycode-angular2-tools@0.1.1',
+21 silly publish   _shasum: 'f90e19ec5f22e0812f55dc99a651e2b4c2587c6d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name donkeycode-angular2-tools
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'donkeycode-angular2-tools',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'donkeycode-angular2-tools',
+26 silly mapToRegistry   name: 'donkeycode-angular2-tools',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/donkeycode-angular2-tools
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/sophielongo/.npm/donkeycode-angular2-tools/0.1.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/donkeycode-angular2-tools
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:55:55
+33 verbose request using bearer token for auth
+34 verbose request id 5560607ec2eb769c
+35 http request PUT https://registry.npmjs.org/donkeycode-angular2-tools
+36 http 403 https://registry.npmjs.org/donkeycode-angular2-tools
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 22 Sep 2016 10:55:57 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1474541755.565230,VS0,VE1452',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/sophielongo/.npm/registry.npmjs.org/donkeycode-angular2-tools on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.1." : donkeycode-angular2-tools
+40 verbose stack     at makeError (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:77:13)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/sophielongo/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid donkeycode-angular2-tools
+43 verbose cwd /Users/sophielongo/Documents/Projets/02_DonkeyCode/01_Made By DonkeyCode/donkeycode-angular2-tools
+44 error Darwin 15.6.0
+45 error argv "/Users/sophielongo/.nvm/versions/node/v4.5.0/bin/node" "/Users/sophielongo/.nvm/versions/node/v4.5.0/bin/npm" "publish"
+46 error node v4.5.0
+47 error npm  v3.10.7
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.1." : donkeycode-angular2-tools
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
